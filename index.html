@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feliz Cumpleaños Miranda</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f8e8f8;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h1 {
+        color: #d63384;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        max-width: 100%;
+      }
+
+      .card {
+        width: 120px;
+        height: 180px;
+        perspective: 1000px;
+        cursor: pointer;
+      }
+
+      .card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+      }
+
+      .card-front,
+      .card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      .card-front {
+        background-color: white;
+        color: #d63384;
+        font-weight: bold;
+      }
+
+      .card-back {
+        background-color: #d63384;
+        color: white;
+        transform: rotateY(180deg);
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .card-img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 5px;
+        border: 2px solid #d63384;
+      }
+
+      .phrase-top {
+        font-size: 14px;
+        margin-bottom: 2px;
+      }
+
+      .phrase-bottom {
+        font-size: 14px;
+        margin-top: 2px;
+      }
+
+      .name {
+        font-size: 16px;
+        margin-top: 5px;
+        color: #333;
+      }
+
+      @media (max-width: 400px) {
+        .card {
+          width: 100px;
+          height: 150px;
+        }
+
+        .card-img {
+          width: 60px;
+          height: 60px;
+        }
+
+        .phrase-top,
+        .phrase-bottom {
+          font-size: 12px;
+        }
+
+        .name {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>¡Para Miranda!</h1>
+    <h2>Haz click en las fotos para ver la sorpresa</h2>
+
+  <div class="cards-container">
+      <!-- Tarjeta 1 -->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="1.jpeg" alt="Imagen 1" class="card-img" />
+            <div class="phrase-top"></div>
+            <div class="phrase-bottom"></div>
+            <div class="name"></div>
+          </div>
+          <div class="card-back">F</div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 2 -->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="2.jpeg" alt="Imagen 2" class="card-img" />
+            <div class="phrase-top"></div>
+            <div class="phrase-bottom"></div>
+            <div class="name"></div>
+          </div>
+          <div class="card-back">E</div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 3 -->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="3.jpeg" alt="Imagen 3" class="card-img" />
+            <div class="phrase-top"></div>
+            <div class="phrase-bottom"></div>
+            <div class="name"></div>
+          </div>
+          <div class="card-back">L</div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 4 -->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="4.jpeg" alt="Imagen 4" class="card-img" />
+            <div class="phrase-top"></div>
+            <div class="phrase-bottom"></div>
+            <div class="name"></div>
+          </div>
+          <div class="card-back">I</div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 5 -->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="5.jpeg" alt="Imagen 5" class="card-img" />
+            <div class="phrase-top"></div>
+            <div class="phrase-bottom"></div>
+            <div class="name"></div>
+          </div>
+          <div class="card-back">Z</div>
+        </div>
+      </div>
+  </div>
+  
+
+  <div class="cards-container">
+      <!-- Tarjeta 6 -->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="6.jpeg" alt="Imagen 6" class="card-img" />
+            <div class="phrase-top"></div>
+            <div class="phrase-bottom"></div>
+            <div class="name"></div>
+          </div>
+          <div class="card-back">C</div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 7 -->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="7.jpeg" alt="Imagen 7" class="card-img" />
+            <div class="phrase-top"></div>
+            <div class="phrase-bottom"></div>
+            <div class="name"></div>
+          </div>
+          <div class="card-back">U</div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 8 -->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="8.jpeg" alt="Imagen 8" class="card-img" />
+            <div class="phrase-top"></div>
+            <div class="phrase-bottom"></div>
+            <div class="name"></div>
+          </div>
+          <div class="card-back">M</div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 9 -->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="9.jpeg" alt="Imagen 9" class="card-img" />
+            <div class="phrase-top"></div>
+            <div class="phrase-bottom"></div>
+            <div class="name"></div>
+          </div>
+          <div class="card-back">P</div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 10 -->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="10.jpeg" alt="Imagen 10" class="card-img" />
+            <div class="phrase-top"></div>
+            <div class="phrase-bottom"></div>
+            <div class="name"></div>
+          </div>
+          <div class="card-back">L</div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 11 -->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="11.jpeg" alt="Imagen 11" class="card-img" />
+            <div class="phrase-top"></div>
+            <div class="phrase-bottom"></div>
+            <div class="name"></div>
+          </div>
+          <div class="card-back">E</div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 12 -->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="12.jpeg" alt="Imagen 12" class="card-img" />
+            <div class="phrase-top"></div>
+            <div class="phrase-bottom"></div>
+            <div class="name"></div>
+          </div>
+          <div class="card-back">A</div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 13 -->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="13.jpeg" alt="Imagen 13" class="card-img" />
+            <div class="phrase-top"></div>
+            <div class="phrase-bottom"></div>
+            <div class="name"></div>
+          </div>
+          <div class="card-back">Ñ</div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 14 -->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="14.jpeg" alt="Imagen 14" class="card-img" />
+            <div class="phrase-top"></div>
+            <div class="phrase-bottom"></div>
+            <div class="name"></div>
+          </div>
+          <div class="card-back">O</div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 15 -->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="15.jpeg" alt="Imagen 15" class="card-img" />
+            <div class="phrase-top"></div>
+            <div class="phrase-bottom"></div>
+            <div class="name"></div>
+          </div>
+          <div class="card-back">S</div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script>
+      // Opcional: Si quisieras que las tarjetas se volteen al tocarlas
+      document.addEventListener("DOMContentLoaded", function () {
+        const cards = document.querySelectorAll(".card-inner");
+
+        cards.forEach((card) => {
+          card.addEventListener("click", function () {
+            this.style.transform =
+              this.style.transform === "rotateY(180deg)"
+                ? "rotateY(0deg)"
+                : "rotateY(180deg)";
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
